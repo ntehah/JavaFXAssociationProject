@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Supprimer_revenueController">
+   <children>
+      <TableView fx:id="table" prefHeight="473.0" prefWidth="728.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="44.0" text="ID" />
+          <TableColumn fx:id="cin" prefWidth="75.0" text="CIN" />
+          <TableColumn fx:id="montant" prefWidth="85.0" text="MONTANT" />
+            <TableColumn fx:id="type" prefWidth="85.0" text="TYPE" />
+            <TableColumn fx:id="date" prefWidth="97.0" text="DATE" />
+            <TableColumn fx:id="num_cheque" prefWidth="91.0" text="NUM CHEQUE" />
+            <TableColumn fx:id="num_compte" prefWidth="134.0" text="NUM COMPTE" />
+            <TableColumn fx:id="nom_banque" prefWidth="190.0" text="NOM B" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="530.0" prefHeight="15.0" prefWidth="728.0" style="-fx-background-color: #4AA6B5;" />
+      <JFXButton layoutX="377.0" layoutY="485.0" onAction="#SupprimerButtonAction" prefHeight="37.0" prefWidth="136.0" ripplerFill="#cdcccc" style="-fx-background-color: #4AA6B5;" text="SUPPRIMER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="556.0" layoutY="485.0" onAction="#ModifierButtonAction" prefHeight="37.0" prefWidth="136.0" ripplerFill="#cdcccc" style="-fx-background-color: #4AA6B5;" text="MODIFIER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

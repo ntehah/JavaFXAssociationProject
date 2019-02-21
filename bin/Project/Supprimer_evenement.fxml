@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Supprimer_eve_Controller">
+   <children>
+      <AnchorPane prefHeight="57.0" prefWidth="728.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label layoutX="30.0" layoutY="16.0" text="Supprimer/Modifier" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutY="57.0" prefHeight="416.0" prefWidth="728.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="49.0" text="ID" />
+          <TableColumn fx:id="nom" prefWidth="106.0" text="NOM " />
+            <TableColumn fx:id="type" prefWidth="90.0" text="TYPE" />
+            <TableColumn fx:id="lieu" prefWidth="96.0" text="LIEU" />
+            <TableColumn fx:id="date" prefWidth="91.0" text="DATE" />
+            <TableColumn fx:id="Duree" prefWidth="53.0" text="DUREE" />
+            <TableColumn fx:id="cotisation" prefWidth="78.0" text="COTISATION" />
+            <TableColumn fx:id="revenue" prefWidth="81.0" text="REVENUE" />
+            <TableColumn fx:id="depense" prefWidth="83.0" text="DEPENSE" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="417.0" layoutY="495.0" onAction="#SupprimerButtonAction" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: #4AA6B5;" text="Supprimer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="575.0" layoutY="495.0" onAction="#ModifierButtonAction" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: #4AA6B5;" text="Modifier" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

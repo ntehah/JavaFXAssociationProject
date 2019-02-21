@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="970.0" style="-fx-background-color: #ECECEB;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Consulter_PerNec_Controller">
+   <children>
+      <AnchorPane prefHeight="61.0" prefWidth="970.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label layoutX="40.0" prefHeight="60.0" prefWidth="387.0" text="Consulter Personnes Necesiteuses" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="91.0" text="NOM OU PRENOM :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="search" focusColor="#4aa6b5" layoutX="215.0" layoutY="76.0" onKeyReleased="#search" prefHeight="20.0" prefWidth="224.0" unFocusColor="#aeaeae">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXTextField>
+      <TableView fx:id="table" layoutX="5.0" layoutY="133.0" prefHeight="417.0" prefWidth="960.0" style="-fx-background-color: #F7F6E7;">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="72.0" text="NOM" />
+            <TableColumn fx:id="prenom" prefWidth="76.0" text="PRENOM" />
+            <TableColumn fx:id="date" prefWidth="75.0" text="DATE" />
+            <TableColumn fx:id="cin" prefWidth="76.0" text="CIN" />
+            <TableColumn fx:id="adresse" text="ADRESSE" />
+            <TableColumn fx:id="codePostale" prefWidth="75.0" text="Code Postal" />
+            <TableColumn fx:id="tel" prefWidth="90.0" text="TELEPHONE" />
+            <TableColumn fx:id="profession" prefWidth="91.0" text="PROFESSION" />
+            <TableColumn fx:id="nombreEnf" prefWidth="68.0" text="NOMBRE_ENF" />
+            <TableColumn fx:id="genre" prefWidth="83.0" text="GENRE" />
+            <TableColumn fx:id="etatCivil" minWidth="8.0" prefWidth="91.0" text="ETAT_CIVILE" />
+            <TableColumn fx:id="revenuAnnuelle" prefWidth="157.0" text="REVENUE_ANNUELLE" />
+         </columns>
+         <effect>
+            <Blend />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>

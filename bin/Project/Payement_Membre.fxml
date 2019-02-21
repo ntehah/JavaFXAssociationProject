@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="903.0" style="-fx-background-color: #ECECEB;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Payement_Membre">
+   <children>
+      <Label layoutX="31.0" layoutY="91.0" text="NOM OU PRENOM :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="8.0" layoutY="130.0" prefHeight="417.0" prefWidth="564.0" style="-fx-background-color: #F7F6E7;">
+        <columns>
+          <TableColumn fx:id="cin" prefWidth="81.0" text="CIN" />
+          <TableColumn fx:id="nom" prefWidth="105.0" text="NOM" />
+            <TableColumn fx:id="prenom" prefWidth="76.0" text="PRENOM" />
+            <TableColumn fx:id="metier" prefWidth="91.0" text="METIER" />
+            <TableColumn fx:id="tel" prefWidth="95.0" text="TELEPHONE" />
+            <TableColumn fx:id="email" prefWidth="113.0" text="EMAIL" />
+        </columns>
+         <effect>
+            <Blend />
+         </effect>
+      </TableView>
+      <AnchorPane prefHeight="61.0" prefWidth="903.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="1.0" lineSpacing="1.0" prefHeight="60.0" prefWidth="257.0" text="PAYEMENT MEMBRE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="592.0" layoutY="91.0" prefHeight="20.0" prefWidth="294.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField focusColor="#4aa6b5" layoutX="222.0" layoutY="87.0" prefHeight="20.0" prefWidth="224.0" unFocusColor="#aeaeae">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXTextField>
+      <TableView fx:id="tablerevenue" layoutX="572.0" layoutY="130.0" prefHeight="417.0" prefWidth="335.0" style="-fx-background-color: #F7F6E7;">
+         <columns>
+            <TableColumn fx:id="payement" prefWidth="89.0" text="PAYEMENT" />
+            <TableColumn fx:id="montant" prefWidth="127.0" text="MONTANT" />
+            <TableColumn fx:id="date" prefWidth="118.0" text="DATE" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

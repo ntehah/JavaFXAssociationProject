@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Consulter_Dep_Controller">
+   <children>
+      <TableView fx:id="table" layoutY="287.0" prefHeight="253.0" prefWidth="800.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="124.0" text="ID" />
+          <TableColumn fx:id="objectif" prefWidth="202.0" text="OBJECTIF" />
+          <TableColumn fx:id="montant" prefWidth="252.0" text="MONTANT" />
+            <TableColumn fx:id="date" prefWidth="221.0" text="DATE" />
+        </columns>
+      </TableView>
+      <TableView fx:id="table1" prefHeight="288.0" prefWidth="800.0">
+         <columns>
+            <TableColumn fx:id="id1" prefWidth="34.0" text="ID" />
+            <TableColumn fx:id="cin" prefWidth="110.0" text="CIN" />
+            <TableColumn fx:id="montant1" prefWidth="97.0" text="MONTANT" />
+            <TableColumn fx:id="type" prefWidth="69.0" text="TYPE" />
+            <TableColumn fx:id="date1" prefWidth="104.0" text="DATE" />
+            <TableColumn fx:id="num_cheque" prefWidth="91.0" text="NUM CHEQUE" />
+            <TableColumn fx:id="num_compte" prefWidth="114.0" text="NUM COMPTE" />
+            <TableColumn fx:id="nom_banque" prefWidth="108.0" text="NOM BANQUE" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutY="575.0" prefHeight="26.0" prefWidth="800.0" style="-fx-background-color: #4AA6B5;" />
+      <Label layoutY="546.0" prefHeight="28.0" prefWidth="122.0" text="TOTAL DEPENSE :" textFill="#343838">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" alignment="CENTER" layoutX="137.0" layoutY="546.0" prefHeight="26.0" prefWidth="122.0" textFill="#343838">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="259.0" layoutY="546.0" prefHeight="28.0" prefWidth="36.0" text="DT" textFill="#343838">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="302.0" layoutY="546.0" prefHeight="28.0" prefWidth="122.0" text="TOTAL REVENUE :" textFill="#343838">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="total1" alignment="CENTER" layoutX="424.0" layoutY="546.0" prefHeight="28.0" prefWidth="122.0" textFill="#343838">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="546.0" layoutY="546.0" prefHeight="28.0" prefWidth="36.0" text="DT" textFill="#343838">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="590.0" layoutY="546.0" prefHeight="28.0" prefWidth="52.0" text="SOLDE :" textFill="#343838">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="total11" alignment="CENTER" layoutX="642.0" layoutY="546.0" prefHeight="28.0" prefWidth="110.0" textFill="#343838">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="752.0" layoutY="546.0" prefHeight="28.0" prefWidth="36.0" text="DT" textFill="#343838">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

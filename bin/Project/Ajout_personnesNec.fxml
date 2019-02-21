@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Ajout_P_Nec_Controller">
+   <children>
+      <Label layoutX="45.0" layoutY="89.0" text="Cin :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="304.0" text="Telephone :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="128.0" text="Nom :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="163.0" text="Prenom :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="199.0" text="Date :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="234.0" text="Adresse :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="268.0" text="Code_Postal :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="337.0" text="Nombre_Enfants :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="368.0" text="Profession :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="435.0" text="Etat Civile :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="401.0" text="Revenue Annuelle :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="txt_cin" layoutX="167.0" layoutY="85.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_nbEnf" layoutX="167.0" layoutY="333.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_tel" layoutX="167.0" layoutY="300.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_nom" layoutX="167.0" layoutY="124.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_adress" layoutX="167.0" layoutY="230.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_pro" layoutX="167.0" layoutY="364.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_rev" layoutX="167.0" layoutY="397.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_prenom" layoutX="165.0" layoutY="159.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_codepostal" layoutX="167.0" layoutY="264.0" prefHeight="25.0" prefWidth="187.0" />
+      <DatePicker fx:id="txt_date" layoutX="165.0" layoutY="195.0" prefHeight="25.0" prefWidth="187.0" />
+      <RadioButton fx:id="radio_C" layoutX="167.0" layoutY="435.0" mnemonicParsing="false" text="Célibataire">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="etat" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio_M" layoutX="300.0" layoutY="435.0" mnemonicParsing="false" text="Marié(e)" toggleGroup="$etat">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radio_D" layoutX="443.0" layoutY="435.0" mnemonicParsing="false" text="Divorcé(e)" toggleGroup="$etat">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label alignment="CENTER" layoutX="-55.0" layoutY="1.0" lineSpacing="1.0" prefHeight="60.0" prefWidth="465.0" text="Ajout personne necéssiteuse" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="41.0" layoutY="464.0" text="Genre :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio_H" layoutX="173.0" layoutY="464.0" mnemonicParsing="false" text="Homme">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_F" layoutX="300.0" layoutY="464.0" mnemonicParsing="false" text="Femme">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="cin" alignment="CENTER" layoutX="405.0" layoutY="88.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="nom" alignment="CENTER" layoutX="405.0" layoutY="127.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="prenom" alignment="CENTER" layoutX="405.0" layoutY="162.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="date" alignment="CENTER" layoutX="405.0" layoutY="198.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="adress" alignment="CENTER" layoutX="405.0" layoutY="233.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="codepostale" alignment="CENTER" layoutX="405.0" layoutY="267.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="tel" alignment="CENTER" layoutX="405.0" layoutY="303.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="nbrEnfants" alignment="CENTER" layoutX="405.0" layoutY="336.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="profession" alignment="CENTER" layoutX="405.0" layoutY="367.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="revenueanel" alignment="CENTER" layoutX="405.0" layoutY="400.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <ImageView fx:id="img_cin" fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_nom" fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_prenom" fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_date" fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_add" fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_code" fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_tel" fitHeight="16.0" fitWidth="16.0" layoutX="363.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_nbEnf" fitHeight="16.0" fitWidth="16.0" layoutX="361.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_prof" fitHeight="16.0" fitWidth="16.0" layoutX="361.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_rev" fitHeight="16.0" fitWidth="16.0" layoutX="361.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton layoutX="241.0" layoutY="512.0" onAction="#AjoutButtonAction" prefHeight="33.0" prefWidth="118.0" style="-fx-background-color: #4AA6B5;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Ajouter_EvenementController">
+   <children>
+      <AnchorPane prefHeight="52.0" prefWidth="664.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label layoutX="34.0" layoutY="9.0" prefHeight="26.0" prefWidth="208.0" text="Ajouter Evenement" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="30.0" layoutY="104.0" prefHeight="17.0" prefWidth="43.0" text="Nom :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="155.0" prefHeight="17.0" prefWidth="43.0" text="Lieu :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="199.0" prefHeight="17.0" prefWidth="43.0" text="Type :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="242.0" prefHeight="17.0" prefWidth="43.0" text="Durée :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="328.0" prefHeight="19.0" prefWidth="74.0" text="Revenue :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="375.0" prefHeight="19.0" prefWidth="74.0" text="Depense :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="285.0" prefHeight="19.0" prefWidth="74.0" text="Cotisation :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nom" layoutX="183.0" layoutY="101.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="txt_lieu" layoutX="183.0" layoutY="152.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="txt_type" layoutX="183.0" layoutY="196.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="txt_duree" layoutX="183.0" layoutY="239.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="txt_cotisation" layoutX="183.0" layoutY="282.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="txt_revenue" layoutX="183.0" layoutY="325.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="txt_depense" layoutX="183.0" layoutY="372.0" prefHeight="25.0" prefWidth="179.0" />
+      <JFXButton layoutX="207.0" layoutY="432.0" onAction="#AjouterButtonAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: #4AA6B5;" text="Ajouter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fx:id="img_nom" fitHeight="16.0" fitWidth="16.0" layoutX="365.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lb_nom" alignment="CENTER" layoutX="398.0" layoutY="101.0" prefHeight="25.0" prefWidth="252.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_lieu" alignment="CENTER" layoutX="398.0" layoutY="152.0" prefHeight="25.0" prefWidth="252.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_type" alignment="CENTER" layoutX="398.0" layoutY="196.0" prefHeight="25.0" prefWidth="252.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_duree" alignment="CENTER" layoutX="387.0" layoutY="239.0" prefHeight="25.0" prefWidth="252.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_revenue" alignment="CENTER" layoutX="398.0" layoutY="325.0" prefHeight="25.0" prefWidth="252.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_depense" alignment="CENTER" layoutX="398.0" layoutY="372.0" prefHeight="25.0" prefWidth="252.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_lieu" fitHeight="16.0" fitWidth="16.0" layoutX="365.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_type" fitHeight="16.0" fitWidth="16.0" layoutX="365.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_duree" fitHeight="16.0" fitWidth="16.0" layoutX="365.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_cotisation" fitHeight="16.0" fitWidth="16.0" layoutX="365.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_revenue" fitHeight="16.0" fitWidth="16.0" layoutX="365.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_depense" fitHeight="16.0" fitWidth="16.0" layoutX="365.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lb_cotisation" alignment="CENTER" layoutX="398.0" layoutY="282.0" prefHeight="25.0" prefWidth="252.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

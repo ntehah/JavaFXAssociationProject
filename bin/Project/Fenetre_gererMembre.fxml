@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.GererMembre_Controller">
+   <children>
+      <Pane prefHeight="517.0" prefWidth="551.0" style="-fx-background-color: #324a5e;">
+         <children>
+            <JFXButton layoutX="316.0" layoutY="129.0" onAction="#ModifierButtonAction" prefHeight="107.0" prefWidth="146.0" style="-fx-background-color: #fff;" text="Modifier" textFill="#324a5e">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="90.0" layoutY="129.0" onAction="#AjouterButtonAction" prefHeight="107.0" prefWidth="146.0" style="-fx-background-color: #fff;" text="Ajouter" textFill="#324a5e">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="90.0" layoutY="282.0" onAction="#SupprimerButtonAction" prefHeight="107.0" prefWidth="146.0" style="-fx-background-color: #fff;" text="Supprimer" textFill="#324a5e">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton layoutX="316.0" layoutY="282.0" onAction="#ConsulterButtonAction" prefHeight="107.0" prefWidth="146.0" style="-fx-background-color: #fff;" text="Consulter" textFill="#324a5e">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="98.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delete.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="98.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/add-user.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="25.0" fitWidth="25.0" layoutX="324.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/search.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView accessibleRole="BUTTON" fitHeight="25.0" fitWidth="25.0" layoutX="324.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exchange.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

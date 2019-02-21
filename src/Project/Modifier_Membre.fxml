@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="827.0" style="-fx-background-color: #ECECEB;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Modifier_Controller">
+   <children>
+      <Label layoutX="30.0" layoutY="79.0" prefHeight="17.0" prefWidth="32.0" text="Cin:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="645.0" layoutY="76.0" mnemonicParsing="false" onAction="#RechercheButtonAction" prefHeight="45.0" prefWidth="157.0" text="Chercher" textFill="#155263">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="29.0" layoutY="106.0" text="Nom:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="141.0" text="Prénom:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="174.0" prefHeight="20.0" prefWidth="121.0" text="Date_Naissance:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="211.0" text="Adress:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="32.0" layoutY="284.0" text="Tel:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="22.0" layoutY="250.0" text="Code_Postal:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="321.0" text="Email:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="22.0" layoutY="389.0" text="Métier:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <RadioButton fx:id="btn_A" layoutX="164.0" layoutY="391.0" mnemonicParsing="false" text="A">
+         <toggleGroup>
+            <ToggleGroup fx:id="metier" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="btn_C" layoutX="225.0" layoutY="391.0" mnemonicParsing="false" text="C" toggleGroup="$metier" />
+      <RadioButton fx:id="btn_K" layoutX="302.0" layoutY="391.0" mnemonicParsing="false" text="K" toggleGroup="$metier" />
+      <Label fx:id="err_add" layoutX="447.0" layoutY="211.0" prefHeight="25.0" prefWidth="239.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font></Label>
+      <Label fx:id="lb_nom" layoutX="164.0" layoutY="109.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_prenom" layoutX="164.0" layoutY="139.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_date" layoutX="164.0" layoutY="172.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="645.0" layoutY="422.0" mnemonicParsing="false" onAction="#ModifierButtonAction" prefHeight="45.0" prefWidth="157.0" style="-fx-background-color: #4AA6B5;" text="Enregistrer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_cin" layoutX="164.0" layoutY="75.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txt_codepostal" layoutX="164.0" layoutY="248.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_tel" layoutX="164.0" layoutY="282.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_email" layoutX="164.0" layoutY="319.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_adress" layoutX="164.0" layoutY="209.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <AnchorPane prefHeight="61.0" prefWidth="827.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="1.0" lineSpacing="1.0" prefHeight="60.0" prefWidth="257.0" text="Modifier Membre" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="359.0" prefHeight="17.0" prefWidth="37.0" text="Genre" />
+      <Label fx:id="lb_genre" layoutX="162.0" layoutY="359.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label fx:id="err_code" layoutX="457.0" layoutY="250.0" prefHeight="25.0" prefWidth="239.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="err_tel" layoutX="457.0" layoutY="284.0" prefHeight="25.0" prefWidth="239.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="err_email" layoutX="457.0" layoutY="321.0" prefHeight="25.0" prefWidth="239.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_add" fitHeight="16.0" fitWidth="16.0" layoutX="336.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_code" fitHeight="16.0" fitWidth="16.0" layoutX="336.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_tel" fitHeight="16.0" fitWidth="16.0" layoutX="336.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_email" fitHeight="16.0" fitWidth="16.0" layoutX="336.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>

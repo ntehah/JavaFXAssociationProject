@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Modifier_evenementController">
+   <children>
+      <Pane prefHeight="536.0" prefWidth="584.0">
+         <children>
+            <Label layoutX="46.0" layoutY="107.0" text="Nom :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="156.0" text="Duree :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="260.0" text="Revenue :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="308.0" text="Depense :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="208.0" prefHeight="17.0" prefWidth="37.0" text="Type :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="360.0" text="Cotisation :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_nom" layoutX="124.0" layoutY="105.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txt_duree" layoutX="124.0" layoutY="154.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txt_type" layoutX="124.0" layoutY="206.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txt_revenue" layoutX="124.0" layoutY="257.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txt_depense" layoutX="124.0" layoutY="305.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField fx:id="txt_cotisation" layoutX="124.0" layoutY="357.0" prefHeight="25.0" prefWidth="200.0" />
+            <Button layoutX="168.0" layoutY="463.0" mnemonicParsing="false" onAction="#ModifierButtonAction" prefHeight="37.0" prefWidth="112.0" style="-fx-background-color: #4AA6B5;" text="Enregistrer " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <AnchorPane prefHeight="61.0" prefWidth="584.0" style="-fx-background-color: #4AA6B5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="32.0" layoutY="1.0" lineSpacing="1.0" prefHeight="60.0" prefWidth="257.0" text="Modifier Evennement" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="txt_lieu" layoutX="124.0" layoutY="405.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="37.0" layoutY="408.0" text="Lieu :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_nom" alignment="CENTER" layoutX="383.0" layoutY="101.0" prefHeight="25.0" prefWidth="191.0" textFill="#ff2e2e" />
+            <Label fx:id="lb_duree" alignment="CENTER" layoutX="383.0" layoutY="154.0" prefHeight="25.0" prefWidth="191.0" textFill="#ff2e2e" />
+            <Label fx:id="lb_type" alignment="CENTER" layoutX="383.0" layoutY="206.0" prefHeight="25.0" prefWidth="191.0" textFill="#ff2e2e" />
+            <Label fx:id="lb_revenue" alignment="CENTER" layoutX="383.0" layoutY="257.0" prefHeight="25.0" prefWidth="191.0" textFill="#ff2e2e" />
+            <Label fx:id="lb_depense" alignment="CENTER" layoutX="383.0" layoutY="305.0" prefHeight="25.0" prefWidth="191.0" textFill="#ff2e2e" />
+            <Label fx:id="lb_cotisation" alignment="CENTER" layoutX="383.0" layoutY="357.0" prefHeight="25.0" prefWidth="191.0" textFill="#ff2e2e" />
+            <Label fx:id="lb_lieu" alignment="CENTER" layoutX="383.0" layoutY="405.0" prefHeight="25.0" prefWidth="191.0" textFill="#ff2e2e" />
+            <ImageView fx:id="img_nom" fitHeight="16.0" fitWidth="16.0" layoutX="332.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img_duree" fitHeight="16.0" fitWidth="16.0" layoutX="332.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img_type" fitHeight="16.0" fitWidth="16.0" layoutX="332.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img_revenue" fitHeight="16.0" fitWidth="16.0" layoutX="332.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img_depense" fitHeight="16.0" fitWidth="16.0" layoutX="332.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img_cotisation" fitHeight="16.0" fitWidth="16.0" layoutX="332.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img_lieu" fitHeight="16.0" fitWidth="16.0" layoutX="332.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

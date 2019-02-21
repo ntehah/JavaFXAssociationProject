@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Modifer_PerNec">
+   <children>
+      <Label layoutX="38.0" layoutY="318.0" text="Telephone :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="97.0" text="Nom :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="133.0" text="Prenom :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="172.0" text="Date :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="250.0" text="Adresse :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="286.0" text="Code_Postal :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="382.0" text="Nombre_Enfants :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="415.0" text="Profession :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="350.0" text="Etat Civile :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="447.0" text="Revenue Annuelle :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nbEnf" layoutX="194.0" layoutY="380.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_tel" layoutX="167.0" layoutY="315.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_nom" layoutX="165.0" layoutY="94.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_adress" layoutX="167.0" layoutY="247.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_pro" layoutX="194.0" layoutY="413.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_rev" layoutX="194.0" layoutY="445.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_prenom" layoutX="165.0" layoutY="130.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="txt_codepostal" layoutX="167.0" layoutY="283.0" prefHeight="25.0" prefWidth="187.0" />
+      <DatePicker fx:id="txt_date" layoutX="165.0" layoutY="169.0" prefHeight="25.0" prefWidth="187.0" />
+      <RadioButton fx:id="radio_C" layoutX="155.0" layoutY="350.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="99.0" text="Célibataire">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="e" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio_M" layoutX="287.0" layoutY="350.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="88.0" text="Marié(e)" toggleGroup="$e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio_D" layoutX="411.0" layoutY="350.0" mnemonicParsing="false" text="Divorcé(e)" toggleGroup="$e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <AnchorPane prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label alignment="CENTER" layoutX="-55.0" layoutY="1.0" lineSpacing="1.0" prefHeight="60.0" prefWidth="465.0" text="Modifer Un Personne" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="41.0" layoutY="205.0" text="Genre :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio_H" layoutX="167.0" layoutY="205.0" mnemonicParsing="false" text="Homme">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="g" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio_F" layoutX="317.0" layoutY="205.0" mnemonicParsing="false" text="Femme" toggleGroup="$g">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <JFXButton layoutX="455.0" layoutY="513.0" onAction="#ModifierButtonAction" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #4AA6B5;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="nom" alignment="CENTER" layoutX="406.0" layoutY="97.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="prenom" alignment="CENTER" layoutX="406.0" layoutY="133.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="date" alignment="CENTER" layoutX="406.0" layoutY="172.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="adress" alignment="CENTER" layoutX="406.0" layoutY="250.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="codepostale" alignment="CENTER" layoutX="406.0" layoutY="285.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="tel" alignment="CENTER" layoutX="406.0" layoutY="318.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="nbrEnfants" alignment="CENTER" layoutX="406.0" layoutY="382.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="profession" alignment="CENTER" layoutX="406.0" layoutY="416.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <Label fx:id="revenueanel" alignment="CENTER" layoutX="406.0" layoutY="448.0" prefHeight="20.0" prefWidth="187.0" textFill="#dd1c1c" />
+      <ImageView fx:id="img_nom" fitHeight="16.0" fitWidth="16.0" layoutX="354.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_prenom" fitHeight="16.0" fitWidth="16.0" layoutX="354.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="373.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_date" fitHeight="16.0" fitWidth="16.0" layoutX="354.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_add" fitHeight="16.0" fitWidth="16.0" layoutX="354.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_code" fitHeight="16.0" fitWidth="16.0" layoutX="362.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_tel" fitHeight="16.0" fitWidth="16.0" layoutX="362.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_nbEnf" fitHeight="16.0" fitWidth="16.0" layoutX="388.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_prof" fitHeight="16.0" fitWidth="16.0" layoutX="388.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_rev" fitHeight="16.0" fitWidth="16.0" layoutX="381.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

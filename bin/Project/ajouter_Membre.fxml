@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="827.0" style="-fx-background-color: #ECECEB;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Ajouter_Controller">
+   <children>
+      <Label layoutX="28.0" layoutY="83.0" text="Nom">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="128.0" text="Prenom">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="32.0" layoutY="220.0" text="CIN">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="271.0" text="Adress">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="30.0" layoutY="319.0" text="Telephone">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="txt_date" layoutX="156.0" layoutY="170.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="30.0" layoutY="172.0" text="Date">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="364.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="419.0" text="Genre">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="449.0" text="Metier">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <JFXButton layoutX="646.0" layoutY="397.0" onAction="#AjoutButtonAction" prefHeight="45.0" prefWidth="157.0" style="-fx-background-color: #4AA6B5;" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <Label fx:id="err_nom" alignment="CENTER" layoutX="396.0" layoutY="81.0" prefHeight="25.0" prefWidth="300.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="61.0" prefWidth="827.0" style="-fx-background-color: #4AA6B5;">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="1.0" lineSpacing="1.0" prefHeight="60.0" prefWidth="257.0" text="Ajouter Membre" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txt_nom" layoutX="159.0" layoutY="80.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txt_prenom" layoutX="159.0" layoutY="125.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txt_cin" layoutX="159.0" layoutY="218.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txt_adress" layoutX="159.0" layoutY="267.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txt_tel" layoutX="160.0" layoutY="317.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txt_email" layoutX="160.0" layoutY="362.0" prefHeight="25.0" prefWidth="166.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <RadioButton fx:id="radio_H" layoutX="159.0" layoutY="419.0" mnemonicParsing="false" text="Homme">
+         <toggleGroup>
+            <ToggleGroup fx:id="genre" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio_F" layoutX="260.0" layoutY="419.0" mnemonicParsing="false" text="Femme" toggleGroup="$genre" />
+      <RadioButton fx:id="radio_A" layoutX="159.0" layoutY="456.0" mnemonicParsing="false" text="A">
+         <toggleGroup>
+            <ToggleGroup fx:id="metier" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio_C" layoutX="209.0" layoutY="456.0" mnemonicParsing="false" text="C" toggleGroup="$metier" />
+      <RadioButton fx:id="radio_K" layoutX="260.0" layoutY="456.0" mnemonicParsing="false" text="K" toggleGroup="$metier" />
+      <TextField fx:id="txt_codepostal" layoutX="362.0" layoutY="267.0" prefHeight="29.0" prefWidth="128.0" promptText="Code Postale" />
+      <ImageView fx:id="img_nom" fitHeight="16.0" fitWidth="16.0" layoutX="329.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_prenom" fitHeight="16.0" fitWidth="16.0" layoutX="329.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_cin" fitHeight="16.0" fitWidth="16.0" layoutX="331.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="err_prenom" alignment="CENTER" layoutX="396.0" layoutY="127.0" prefHeight="25.0" prefWidth="300.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="err_cin" alignment="CENTER" layoutX="431.0" layoutY="220.0" prefHeight="25.0" prefWidth="230.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_add" fitHeight="16.0" fitWidth="16.0" layoutX="331.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_code" fitHeight="16.0" fitWidth="16.0" layoutX="498.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_tel" fitHeight="16.0" fitWidth="16.0" layoutX="329.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_email" fitHeight="16.0" fitWidth="16.0" layoutX="329.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_genre" fitHeight="16.0" fitWidth="16.0" layoutX="350.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_metier" fitHeight="16.0" fitWidth="16.0" layoutX="343.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img_date" fitHeight="16.0" fitWidth="16.0" layoutX="329.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="err_date" alignment="CENTER" layoutX="396.0" layoutY="171.0" prefHeight="25.0" prefWidth="300.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="err_add" alignment="CENTER" layoutX="542.0" layoutY="269.0" prefHeight="25.0" prefWidth="281.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="err_tel" alignment="CENTER" layoutX="406.0" layoutY="320.0" prefHeight="25.0" prefWidth="281.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="err_email" alignment="CENTER" layoutX="406.0" layoutY="364.0" prefHeight="25.0" prefWidth="281.0" textFill="#eb3535">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
